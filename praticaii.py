@@ -51,3 +51,26 @@ criarImagemCinza().show()
 criarImagemBinaria().show()
 
 
+#Task 5 
+def separarCanais():
+    img = Image.open("rgb.png")
+    img_R = Image.new("RGB", img.size)
+    img_B = Image.new("RGB", img.size)
+    img_G = Image.new("RGB", img.size)
+    raster = img.load()
+    raster_R = img_R.load()
+    raster_B = img_B.load() 
+    raster_G = img_G.load()
+    for i in range(img.size[0]):
+        for j in range(img.size[1]):
+            (r,g,b,_) = img.getpixel((i,j))
+            raster_R[i,j] = (r,0,0,_)
+            raster_G[i,j] = (0,g,0,_)
+            raster_B[i,j] = (0,0,b,_)
+    img_R.show()
+    img_G.show()
+    img_B.show()
+    return img_R, img_G, img_B
+
+separarCanais()
+

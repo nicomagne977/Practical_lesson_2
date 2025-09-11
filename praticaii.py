@@ -2,6 +2,11 @@ from urllib.request import urlopen
 from PIL import Image # package pillow
 import math
 
+# Task 1 -> Reduce the resolution of the image to half the height 
+# and width of the  rgb.png  image and display this image.
+
+
+# Task 2 -> Convert rgb.png image to grayscale and display it.
 def criarImagemRGB():
     img = Image.new( "RGB", (512,256))
     raster = img.load()
@@ -49,5 +54,4 @@ img.show()
 criarImagemRGB().show()
 criarImagemCinza().show()
 criarImagemBinaria().show()
-
 

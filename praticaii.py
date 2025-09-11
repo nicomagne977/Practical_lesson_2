@@ -7,6 +7,18 @@ import math
 
 
 # Task 2 -> Convert rgb.png image to grayscale and display it.
+
+# Task 3-> Transform rgb.png image   into binary image and display it.
+
+# Task 4-> Reduce the number of bits per pixel of the  rgb.png image to 3 bits. 
+# Tip: To do this, perform a binary operation to keep only the 3 most significant 
+# bits of each color component. For example, an R channel of 1110 1101 would be 
+# converted to 1110 0000.
+
+# Task 5-> As illustrated in the image below, split the RGB channels of the  
+# rgb.png image , producing three images: R, G, and B, from the original image. 
+# As shown in the example below, the pixels (i, j) in image R should represent a shade of red equal to the R component of the pixels (i, j) in the original image. Likewise, images G and B should contain the green and blue intensities of the pixels in the original image.
+
 def criarImagemRGB():
     img = Image.new( "RGB", (512,256))
     raster = img.load()

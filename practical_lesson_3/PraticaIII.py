@@ -21,7 +21,7 @@ def MSE(ori, dec):
 if __name__ == "__main__":
     filepath = 'lena.bmp'
     img = Image.open(filepath)
-    matriculas = [20205642,2022423]
+    matriculas = [23100481, 945542, 202503768]
     
     # instancia objeto Cuif, convertendo imagem em CUIF.1
     cuif = Cuif(img,1,matriculas)

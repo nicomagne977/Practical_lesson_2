@@ -19,7 +19,7 @@ def MSE(ori, dec):
     return 0
 
 if __name__ == "__main__":
-    filepath = 'lena.bmp'
+    filepath = 'practical_lesson_3/lena.bmp'
     img = Image.open(filepath)
     matriculas = [23100481, 945542, 202503768]
     
